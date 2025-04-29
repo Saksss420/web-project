@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKSHYAM KHADKA</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            position: relative;
+            width: 400px;
+            height: 700px;
+            overflow: hidden;
+        }
+        .image {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: left;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            box-sizing: border-box;
+            font-weight: 700;
+            font-size: large;
+        }
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        .overlay h1, .overlay p, .overlay button {
+            margin-left: 10px;
+        }
+        .overlay h1 {
+            font-size: 20px;
+            margin: 5px 0;
+        }
+        .overlay p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .overlay button {
+            padding: 8px 16px;
+            background: #ff6b6b;
+            border: none;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        .overlay button:hover {
+            background: #ff4b4b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.mdxblog.io/images/posts/how-to-use-images/grass-tree-sky.jpg" alt="A scenic view of grass, tree, and sky" class="image">
+        <div class="overlay">
+            <h1>CARD TITLE</h1>
+            <p>This is a simple card description.</p>
+            <button role="button">Read More</button>
+        </div>
+    </div>
+</body>
+</html>

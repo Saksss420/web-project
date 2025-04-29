@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Navigation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #ddd;
+      }
+      .nav-item {
+        position: relative;
+      }
+      .nav-link {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #000;
+        transition: background-color 0.3s;
+      }
+      .nav-link:hover {
+        background-color: #e9ecef;
+      }
+      .nav-link.active {
+        background-color: #ddd;
+        font-weight: bold;
+      }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+      .dropdown-menu .dropdown-item {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #000;
+        display: block;
+        transition: background-color 0.3s;
+      }
+      .dropdown-menu .dropdown-item:hover {
+        background-color: #e9ecef;
+      }
+      .nav-item:hover .dropdown-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Design</a></li>
+          <li><a class="dropdown-item" href="#">Development</a></li>
+          <li><a class="dropdown-item" href="#">Accessibility</a></li>
+          <li><a class="dropdown-item" href="#">Content Strategy</a></li>
+          <li><a class="dropdown-item" href="#">Training</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Portfolio</a>
+        <ul class="dropdown-menu"></ul>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Our Team</a></li>
+          <li><a class="dropdown-item" href="#">Our Story</a></li>
+          <li><a class="dropdown-item" href="#">Careers</a></li>
+        </ul>
+      </li>
+
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html></ul>
